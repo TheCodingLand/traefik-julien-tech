@@ -1,7 +1,7 @@
 
 
-debug = true
-logLevel = "ERROR"
+debug = false
+logLevel = "WARNING"
 
 
 [docker]
@@ -23,9 +23,6 @@ defaultEntryPoints = [ "https"]
 [entryPoints.https]
   address = ":443"
   [entryPoints.https.tls]
-
-[entryPoints.ping]
-  address = ":8082"
 
 [entryPoints.admin]
   address = ":8081"
@@ -56,4 +53,4 @@ defaultEntryPoints = [ "https"]
 
     
  [acme.httpChallenge]
- entryPoint = "http"
+  entryPoint = "http"
