@@ -10,7 +10,7 @@ logLevel = "WARNING"
   watch = true
   exposedbydefault = false
 
-defaultEntryPoints = [ "https"]
+defaultEntryPoints = [ "http","https"]
 
 # Entrypoints, http and https
 [entryPoints]
@@ -50,6 +50,8 @@ defaultEntryPoints = [ "https"]
  storage = "/etc/traefik/acme.json"
  onHostRule = true
  entryPoint = "https"
+ acmeLogging = true
+ onDemand = true
 
     
  [acme.httpChallenge]
