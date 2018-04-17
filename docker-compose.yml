@@ -8,7 +8,8 @@ services:
       - 80:80
       - 443:443
     labels:
-      - "traefik.backend=traefik"
+      - "traefik.backend=api"
+      - "traefik.priority=20"
       - "traefik.frontend.rule=Host:admin.julien.tech"
       - "traefik.enable=true"
       - "traefik.frontend.entryPoints=http,https"

@@ -37,7 +37,7 @@ defaultEntryPoints = [ "http","https"]
   entryPoint = "ping"
 
 [api]
-  entryPoint = "https"
+  
   dashboard = true
   [web.statistics]
 
