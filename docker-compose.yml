@@ -1,0 +1,18 @@
+services:
+  traefik:
+    image: traefik:1.5
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+      - 10000:8081
+    labels:
+      - "traefik.frontend.rule=Host:docker.julien.tech"
+      - "traefik.frontend.entryPoints=http-admin"
+    networks:
+      - web
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - /opt/traefik/acme.json:/etc/traefik/acme.json
+    container_name: traefik
