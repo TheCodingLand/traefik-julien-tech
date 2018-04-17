@@ -17,7 +17,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /opt/traefik/traefik.toml:/etc/traefik/traefik.toml
       - /opt/traefik/acme.json:/etc/traefik/acme.json
-    container_name: traefik
+    
 networks:
   web:
     external: true
