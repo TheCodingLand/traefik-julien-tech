@@ -1,12 +1,12 @@
 
 
-debug = false
+debug = true
 logLevel = "ERROR"
 
 
 [docker]
   endpoint = "unix:///var/run/docker.sock"
-  domain = "docker.rcsl.lu"
+  domain = "julien.tech"
   watch = true
   exposedbydefault = false
 defaultEntryPoints = [ "https"]
@@ -48,9 +48,8 @@ defaultEntryPoints = [ "https"]
         url = "http://127.0.0.1:8081"
 
 [acme]
- email = "aureussz@gmail.com"
+ email = "admin@julien.tech"
  storage = "/etc/traefik/acme.json"
- entryPoint = "https"
  onHostRule = true
 
     
