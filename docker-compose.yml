@@ -7,7 +7,6 @@ services:
     ports:
       - 80:80
       - 443:443
-      - 10000:8081
     labels:
       - "traefik.frontend.rule=Host:traefik.julien.tech"
       - "traefik.enable=true"
