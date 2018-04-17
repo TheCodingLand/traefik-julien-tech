@@ -9,6 +9,7 @@ logLevel = "ERROR"
   domain = "julien.tech"
   watch = true
   exposedbydefault = false
+
 defaultEntryPoints = [ "https"]
 
 # Entrypoints, http and https
@@ -51,6 +52,7 @@ defaultEntryPoints = [ "https"]
  email = "admin@julien.tech"
  storage = "/etc/traefik/acme.json"
  onHostRule = true
+ entryPoint = "https"
 
     
  [acme.httpChallenge]
