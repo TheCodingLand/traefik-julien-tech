@@ -9,7 +9,7 @@ services:
       - 443:443
       - 10000:8081
     labels:
-      - "traefik.frontend.rule=Host:docker.julien.tech"
+      - "traefik.frontend.rule=Host:julien.tech"
       - "traefik.frontend.entryPoints=http-admin"
     networks:
       - web
